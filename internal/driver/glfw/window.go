@@ -80,7 +80,6 @@ func (w *window) SetFixedSize(fixed bool) {
 	w.fixedSize = fixed
 	w.runOnMainWhenCreated(func() {
 		w.fitContent()
-		w.processResized(w.width, w.height)
 	})
 }
 
